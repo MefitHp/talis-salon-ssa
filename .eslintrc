@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-prettier",
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "eslint-config-airbnb/whitespace"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "plugins": ["react", "react-hooks", "fp", "import"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    // Default eslint rules
+    "arrow-body-style": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "complexity": ["warn", 5],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "no-arguments": "warn",
+    "max-depth": ["warn", 3],
+    "max-lines": ["warn", 400],
+    "max-lines-per-function": ["warn", 200], // TODO: Define a value for max lines within a function
+    "max-params": ["warn", 2],
+    "max-nested-callbacks": ["warn", 2],
+    "no-param-reassign": "warn",
+    // fp eslint rules
+    "fp/no-let": "warn",
+    "fp/no-loops": "warn",
+    "fp/no-mutating-assign": "warn",
+    "fp/no-mutating-methods": "error",
+    "fp/no-mutation": [
+      "warn",
+      {
+        "exceptions": [
+          { "property": "propTypes" },
+          { "property": "defaultProps" }
+        ]
+      }
+    ],
+    "fp/no-nil": "warn",
+    "fp/no-rest-parameters": "warn",
+    "fp/no-this": "warn",
+    "fp/no-throw": "warn",
+    "fp/no-unused-expression": "warn",
+    "fp/no-valueof-field": "warn",
+    // React eslint rules
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-fragments": "element",
+    "react/prop-types": [2, { "ignore": ["children"] }]
+  }
+}
