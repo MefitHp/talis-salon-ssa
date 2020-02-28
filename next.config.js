@@ -7,8 +7,9 @@ module.exports = {
     //aliases
     config.resolve.alias['components'] = path.join(__dirname, 'components');
     config.resolve.alias['pages'] = path.join(__dirname, 'pages');
+    config.resolve.alias['utils'] = path.join(__dirname, 'utils');
+    config.resolve.alias['config'] = path.join(__dirname, 'config');
     // config.resolve.alias['assets'] = path.join(__dirname, 'public');
-    // config.resolve.alias['utils'] = path.join(__dirname, 'utils');
     // config.resolve.alias['models'] = path.join(__dirname, 'models');
     // config.resolve.alias['models'] = path.join(__dirname, 'models');
     // config.resolve.alias['actions'] = path.join(__dirname, 'redux/actions');

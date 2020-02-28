@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
+const Menu = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <MenuButtonStyled onClick={() => setOpen(!open)} />
+      <MenuBarStyled isOpen={open}>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </MenuBarStyled>
+    </>
+  );
+};
+
+//StyledComponents
 const MenuButtonStyled = styled.div`
   cursor: pointer;
   top: 40px;
@@ -21,7 +37,7 @@ const MenuBarStyled = styled.aside`
   top: 0;
   bottom: 0;
   right: 0;
-  background: #231f20;
+  background: ${props => props.theme.colors.primary_light};
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
@@ -32,24 +48,5 @@ const MenuBarStyled = styled.aside`
       transform: translateX(0);
   `}
 `;
-
-const MenuItem = styled.p`
-  color: white;
-  font-size: 24px;
-  font-weight: 450;
-`;
-const Menu = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      <MenuButtonStyled onClick={() => setOpen(!open)} />
-      <MenuBarStyled isOpen={open}>
-        <MenuItem>Uno</MenuItem>
-        <MenuItem>Dos</MenuItem>
-        <MenuItem>Tres</MenuItem>
-      </MenuBarStyled>
-    </>
-  );
-};
 
 export default Menu;

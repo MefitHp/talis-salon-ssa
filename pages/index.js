@@ -1,12 +1,9 @@
-import Head from 'next/head';
 import Menu from 'components/shared/Menu';
+import Navbar from 'components/shared/Navbar';
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Talis | Beauty Salon</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <Navbar />
     <h1>Talis Salon</h1>
     <Menu />
   </div>
