@@ -25,7 +25,7 @@ const MenuButtonStyled = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: var(--primary);
   z-index: 1001;
 `;
 
@@ -37,7 +37,7 @@ const MenuBarStyled = styled.aside`
   top: 0;
   bottom: 0;
   right: 0;
-  background: ${props => props.theme.colors.primary_light};
+  background: var(--primary_light);
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;

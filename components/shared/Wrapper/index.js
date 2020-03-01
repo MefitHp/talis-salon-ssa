@@ -7,7 +7,7 @@ const Wrapper = ({ children }) => {
 
 const WrapperStyles = styled.div`
   max-width: 1440px;
-  padding: 0 10px;
+
   margin: 0 auto;
 `;
 

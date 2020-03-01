@@ -19,8 +19,6 @@ const Home = () => (
               beatae nesciunt consequatur quaerat dolores, laudantium maxime earum quia nihil autem
               ad error hic fugit cumque .
             </p>
-            <Button type="primary">Saber más</Button>
-            <br />
             <Button type="secondary">Saber más</Button>
           </div>
         </ArticleStyled>
@@ -33,6 +31,10 @@ const Section = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url('/assets/images/duotone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
 `;
 
 const ArticleStyled = styled.article`
