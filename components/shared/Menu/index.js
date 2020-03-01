@@ -20,7 +20,7 @@ const Menu = () => {
 const MenuButtonStyled = styled.div`
   cursor: pointer;
   top: 40px;
-  right: 15px;
+  right: 35px;
   position: fixed;
   width: 60px;
   height: 60px;
@@ -43,10 +43,9 @@ const MenuBarStyled = styled.aside`
   z-index: 1000;
   ${({ isOpen }) =>
     isOpen &&
-    `
-      transition-delay: 0.1s;
-      transform: translateX(0);
-  `}
+    `transition-delay: 0.1s;
+    transform: translateX(0);
+    `}
 `;
 
 export default Menu;

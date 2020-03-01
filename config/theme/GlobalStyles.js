@@ -7,8 +7,9 @@ export const GlobalStyles = createGlobalStyle`
     --primary_dark: ${({ theme }) => theme.colors.primary_dark};
     --white: ${({ theme }) => theme.colors.white};
     --black: ${({ theme }) => theme.colors.black};
+    --gray: ${({ theme }) => theme.colors.gray};
+    --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     min-height: 100vh;
-    background-color: var(--white);
     color: var(--black);
   }
   body {
@@ -21,12 +22,31 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   a {
-      text-decoration: none;
-      font-size: 20px;
-      transition: color 200ms ease-in-out;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 200ms ease-in-out;
   }
   a:hover{
-      color: var(--primary);
+    color: var(--primary);  
+  }
+  button {
+    transition: all 200ms ease-in-out;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+  }
+  button:hover{
+    color: var(--primary);
+    background: #fff;
+  }
+  button:focus {
+    outline:0
   }
 `;
 
