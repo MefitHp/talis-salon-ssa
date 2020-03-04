@@ -37,7 +37,8 @@ const MenuBarStyled = styled.aside`
   top: 0;
   bottom: 0;
   right: 0;
-  background: var(--primary_light);
+  background: #fffcfc;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
