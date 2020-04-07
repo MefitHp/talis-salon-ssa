@@ -9,7 +9,7 @@ const AboutMe = () => {
         <CardImageContainer>
           <CardImage />
         </CardImageContainer>
-        <div style={{ textAlign: 'center' }}>
+        <div>
           <h2>¿Quién es Talis?</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste at soluta officiis
@@ -35,19 +35,17 @@ const AboutMeContainer = styled.section`
 `;
 
 const AboutMeCard = styled.div`
+  display: flex;
   background: #fffcfc;
   border-radius: 15px;
   max-width: 800px;
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  display: grid;
-  grid-gap: 1rem;
-  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(auto-fit, 1fr);
   @media ${mediaQuery.xs} {
     min-width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 `;
 

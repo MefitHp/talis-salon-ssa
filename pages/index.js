@@ -8,7 +8,7 @@ import AboutMe from 'components/sections/aboutMe';
 import mediaQuery from 'utils/mediaQuery';
 
 const Home = () => (
-  <Wrapper>
+  <Wrapper hasShadow>
     <HeadSection>
       <Menu />
       <Navbar />
