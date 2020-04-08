@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
-import Menu from 'components/shared/Menu';
-import Navbar from 'components/shared/Navbar';
-import Wrapper from 'components/shared/Wrapper';
-import Intro from 'components/sections/Intro';
-import AboutMe from 'components/sections/aboutMe';
+import { Menu, Navbar, Wrapper } from 'components/shared';
+import { AboutMe, Intro } from 'components/sections';
 import mediaQuery from 'utils/mediaQuery';
 
 const Home = () => (
