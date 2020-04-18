@@ -26,7 +26,7 @@ const AboutMe = () => {
 };
 
 const AboutMeContainer = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ const AboutMeCard = styled.div`
   max-width: 800px;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   @media ${mediaQuery.xs} {
     min-width: 90%;
     flex-wrap: wrap;
@@ -68,6 +68,6 @@ const CardImage = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 `;
 export default AboutMe;

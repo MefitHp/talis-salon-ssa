@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Menu, Navbar, Wrapper } from 'components/shared';
-import { AboutMe, Intro } from 'components/sections';
+import { AboutMe, Intro, WhatDoWeDo } from 'components/sections';
 import mediaQuery from 'utils/mediaQuery';
 
 const Home = () => (
@@ -12,6 +12,7 @@ const Home = () => (
       <Intro />
     </HeadSection>
     <AboutMe />
+    <WhatDoWeDo />
   </Wrapper>
 );
 
