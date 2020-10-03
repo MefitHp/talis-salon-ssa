@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  *{box-sizing: border-box;}
 :root {
     --primary: ${({ theme }) => theme.colors.primary};
     --primary_light: ${({ theme }) => theme.colors.primary_light};
