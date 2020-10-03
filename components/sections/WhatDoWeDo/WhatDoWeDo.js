@@ -57,7 +57,6 @@ const Services = styled.div`
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  min-width: 480px;
   padding: 20px;
   width: 100%;
   padding: 0 2rem;
@@ -67,6 +66,7 @@ const ServiceCard = styled.div`
   border-radius: 4px;
   padding: 8px;
   height: 300px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   background-image: url('${({ src }) => src}');
   background-position: center;
   background-repeat: no-repeat;
@@ -93,6 +93,7 @@ const ServiceCard = styled.div`
 `;
 
 const Mask = styled.div`
+  border-radius: 4px;
   padding: 8px;
   position: absolute;
   background: hsla(6, 78%, 77%, 0.5);

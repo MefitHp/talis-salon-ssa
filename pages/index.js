@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Menu, Navbar, Wrapper } from 'components/shared';
+import { Footer, Menu, Navbar, Wrapper } from 'components/shared';
 import { AboutMe, Intro, WhatDoWeDo } from 'components/sections';
 import mediaQuery from 'utils/mediaQuery';
 
@@ -13,6 +13,7 @@ const Home = () => (
     </HeadSection>
     <AboutMe />
     <WhatDoWeDo />
+    <Footer />
   </Wrapper>
 );
 
