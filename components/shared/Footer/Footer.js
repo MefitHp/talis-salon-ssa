@@ -7,7 +7,12 @@ const Footer = () => {
   return (
     <FooterContainer>
       <span>
-        <FontAwesomeIcon icon={['fab', 'facebook']} />
+        <a className="icon facebook" title="Pagina de Facebook" href="https://www.facebook.com/talisbeautysalon" target="_blank" rel="noopener">
+          <FontAwesomeIcon icon={['fab', 'facebook']} />
+        </a>
+        <a className="icon instagram" title="Pagina de Facebook" href="https://www.facebook.com/talisbeautysalon" target="_blank" rel="noopener">
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
+        </a>
       </span>
       <span>Talis Beauty Salon, {currentYear}.</span>
       <span>
@@ -33,6 +38,14 @@ const FooterContainer = styled.footer`
     &:hover {
       color: white;
     }
+  }
+  .icon {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .facebook {
+    color: #4267B2;
   }
 `;
 export default Footer;

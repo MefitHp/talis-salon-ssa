@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
+  const menuIcons = open ? ['fas', 'times'] : ['fas', 'bars'];
   return (
     <>
-      <MenuButtonStyled onClick={() => setOpen(!open)} />
+      <MenuButtonStyled onClick={() => setOpen(!open)}>
+        <FontAwesomeIcon icon={menuIcons} />
+      </MenuButtonStyled>
       <MenuBarStyled isOpen={open}>
         <Link href="/">
           <a>Home</a>
@@ -27,6 +31,12 @@ const MenuButtonStyled = styled.div`
   border-radius: 50%;
   background-color: var(--primary);
   z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  transition: all ease-in-out 200ms;
 `;
 
 const MenuBarStyled = styled.aside`
