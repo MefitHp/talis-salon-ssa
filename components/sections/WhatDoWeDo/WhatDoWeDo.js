@@ -32,7 +32,7 @@ const WhatDoWeDo = () => {
       <Title center>Nuestros servicios</Title>
       <Services>
         {services.map(service => (
-          <ServiceCard src={service.image}>
+          <ServiceCard key={service.title} src={service.image}>
             <Mask>
               <h3>{service.title}</h3>
               <p>{service.desc}</p>
