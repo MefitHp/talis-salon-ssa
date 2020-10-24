@@ -1,5 +1,5 @@
-import { AboutMe } from './AboutMe';
-import { Intro } from './Intro';
+import { AboutMe } from './aboutMe';
+import { Intro } from './intro';
 import { Location } from './location';
 import { WhatDoWeDo } from './whatDoWeDo';
 
