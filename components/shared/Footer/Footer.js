@@ -28,7 +28,7 @@ const Footer = () => {
         <a
           className="icon whatsapp"
           title="Enviar whatsapp"
-          href="https://api.whatsapp.com/send?phone=7717489789"
+          href="https://api.whatsapp.com/send?phone=17717489789"
           target="_blank"
           rel="noopener">
           <FontAwesomeIcon className="whatsapp" icon={['fab', 'whatsapp']} />

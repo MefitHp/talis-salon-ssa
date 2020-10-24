@@ -21,7 +21,7 @@ const Location = () => {
             <br />
             <h4>O comunicate al número:</h4>
             <a
-              href="https://api.whatsapp.com/send?phone=7717489789"
+              href="https://api.whatsapp.com/send?phone=17717489789"
               style={{ textDecoration: 'underline' }}
               target="_blank"
               rel="noopener">
