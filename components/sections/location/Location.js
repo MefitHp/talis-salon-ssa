@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Title } from 'components/shared';
+import mediaQuery from 'utils/mediaQuery';
 
 const Location = () => {
   return (
@@ -61,7 +62,7 @@ const LocationContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: hsla(6, 78%, 77%, 0.22);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 12px;
   padding: 1rem;
   h4 {
@@ -82,12 +83,15 @@ const FlexWrapper = styled.section`
   width: 100%;
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 3fr;
+  @media ${mediaQuery.md} {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 `;
 
 const FrameContainer = styled.div`
   width: 100%;
-  height: 300px;
+  height: 320px;
   border-radius: 12px;
   overflow: hidden;
   opacity: 0.8;
